@@ -30,7 +30,7 @@ const { title, image, headings = [], showTOC = false } = Astro.props;
 
         // Use stored theme if available, otherwise use system preference
         let theme;
-        if (storedTheme) {
+        if (storedTheme) {    
           theme = storedTheme;
         } else {
           theme = prefersDark ? SITE_THEME.dark : SITE_THEME.light;
